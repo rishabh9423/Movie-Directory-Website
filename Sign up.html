@@ -1,0 +1,133 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+    	<style>
+    	    * {
+                color: white;
+            }
+
+    	    .button {
+				background-color: #4CAF50;
+		        border: none;
+		        color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+		    }
+
+		    input[value=Female] {
+		    	position:absolute; 
+		    	top: 11px; 
+		    	left: 275px;
+		    }
+          
+    	  	input[type=text], select {
+	    	  	color: black;
+			    padding: 12px 20px;
+			    margin: 8px;
+			    display: inline-block;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    box-sizing: border-box;
+			    color: black
+            }
+
+            input[type=date], select {
+            	color: black;
+            	position:absolute; 
+            	top: 325px; 
+            	left:210px;
+            	height: 25px;
+            	width: 170px;
+            	font-size: 20px;
+            }
+          
+    	   .signup {
+	    	   	font-size: 70px;
+	    	   	font-family: 'Courier New', monospace;
+    	    }
+          
+	       div.a {
+		       text-align: left;
+		       font-size: 20px;
+		       font-weight: 100; 
+		       font-family: 'Courier New', monospace;
+	       }
+
+	       div.b {
+		       text-align: left;
+		       font-size: 20px;
+		       font-weight: 100;
+		       font-family: 'Courier New', monospace;
+	       }
+
+    	</style>
+
+    	<title>Watchlist</title>
+
+	    <center>
+	        <a href="Experiment.html" style="position:absolute; top: 20px; right: 520px;">
+	            <img src="MR.png"> 
+	        </a>
+	    </center>
+
+        <div class="a" style = "position:absolute; left:30px; top:10px">
+            <p>
+                <a href="movies.html" style="text-decoration: none; color: inherit">
+                   Movies
+                </a>
+
+                <a href="Trailer.html" style="text-decoration: none; color: inherit;">
+                    &nbspTrailers
+                </a> 
+            </p>
+
+        </div>
+	    <h2 class="signup" style="position: absolute; top: 40px ">Your Watchlist</h2>    	
+    </head>
+    <body background="SUBG.png">
+    	<div class="b">
+	    	<table>
+	    		<tr style="position: absolute; top: 200px">
+	    			<td><font face="Courier New" size="6px">Name:</font></td>
+	    			<td> <input type="text" name="FullName" placeholder="Example: John Smith" style="width: 300pt; position: absolute; top: -5px; left: 190px;"></td>
+	    		</tr>
+	    				
+	    		<tr style="position: absolute; top: 260px">    
+	                <td><font face="Courier New" size="6px" style="position:absolute; left: 0px">Gender:</font></td>
+	                <td>
+	                    <input type="radio" name="Gender" value="Male" style="position:absolute; top: 11px; left:195px"> 
+	                        <font style="position:absolute; top:11px; left: 220px">Male</font>
+	                    <input type="radio" name="Gender" value="Female"> 
+	                        <font style="position:absolute; top:11px; left: 300px">Female</font> 
+	                    <input type="radio" name="Gender" value="Others" style="position:absolute; top: 11px; left:380px">
+	                        <font style="position:absolute; top:11px; left: 405px"> Others</font>
+	                </td>
+	            </tr>		
+
+	     		<tr style="position: absolute; top: 320px"> 
+				    <label for="birthday" style="position:absolute; top: 320px";><font size="6px">Birthday:</font>
+				    </label>
+				    <input type="date" name="birthday">
+	     		</tr>
+
+	     		<tr style="position: absolute; top: 380px">
+	     			<td><font face="Courier New" size="6px">Email id:</font></td>
+	    			<td> <input type="text" name="Email" placeholder="Example: JohnWick@gmail.com" style="width: 450pt; position: absolute; top: -10px; left: 190px;"></td>	
+	     		</tr>
+
+	            <tr style="position: absolute; top: 440px">
+	            	<td><font face="Courier New" size="6px">Password:</font></td>
+	    			<td><input type="text" name="Password" placeholder="Enter Your Password" style="width: 400pt; position: absolute; top:-5px; left: 190px;"></td>
+	    			<td>
+	    				<button class="button" style="size: 30pt; position:absolute; top: 70px; left: 195px; font-family:Courier New, monospace; font-size: 20pt;">Submit</button>
+	    			</td>
+	     		</tr>
+	     	</table>	     		
+     	</div>	
+    </body>    
+</html>
